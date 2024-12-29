@@ -24,7 +24,7 @@ createForm.addEventListener('submit', function(e) {
     data.append('imageFile', imageFile.files[0]);
     // now the server want the data in the binary format but the our data is the file now we have to install the package named multer
 
-    fetch('http://localhost:3000/posts', {
+    fetch('/posts', {
         method: 'POST',
         //// uncomment below all this for the original one
         // headers: {
