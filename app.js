@@ -25,7 +25,7 @@ app.set('view engine', 'ejs')
 // cr.save()
 //     .then(() => console.log('Done'));  
 
-mongoose.connect('mongodb://localhost/travels');
+mongoose.connect('mongodb+srv://SahilTejwani:%23TEJsah123@mycluster.ba8pw.mongodb.net/travels');
 app.use(express.json());
 
 
@@ -89,6 +89,7 @@ app.get('/login', (req, resp) => {
     }
 });
 
+let port = process.env.port || 3000
 app.listen(3000, () => {
-    console.log('Listening the port 3000...');
+    console.log(`Listening the port ${port}...`);
 });
