@@ -46,7 +46,7 @@ async function addPosts() {
         </tr>`;
 
         //articles.innerHTML = postHTML;
-
+        // inner html main jo content hai woh replace hoge completely, insertadjacentHtml amin woh sirf add hote hai
         articles.insertAdjacentHTML('beforeend', postHTML);
     })
 }
